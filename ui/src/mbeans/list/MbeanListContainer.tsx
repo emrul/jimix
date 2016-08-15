@@ -17,7 +17,7 @@ export class MbeanListContainer extends React.Component<{inventory: Inventory}, 
 			<h2>Mbeans</h2>
 			<ul>
 				{this.props.inventory.mbeans.map((mbean) =>
-				<li key={mbean.objectName}>{mbean.objectName}</li>
+				<li key={mbean.objectName}>{mbean.label}</li>
 			)}
 			</ul>
 		</div>;
